@@ -1,11 +1,11 @@
-# README
+# Tanda Hackathon Starter Kit
 
 ## What is this?
-This is a starter kit for use at hackathons. It comes with:
+This is a starter kit for use at hackathons made by the team at Tanda. It comes with:
 
 * Email/password authentication
 * Tailwind on the frontend
-* Simple API Authentication
+* Simple API Authentication using JWTs if you are using an SPA frontend like Vue or React.
 
 # Getting Started
 To get started with the Hackathon Starter Kit - run the following commands.
