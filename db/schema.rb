@@ -10,32 +10,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_07_15_013402) do
+ActiveRecord::Schema[8.1].define(version: 2025_11_17_054715) do
   create_table "books", force: :cascade do |t|
-    t.string "title"
     t.string "author"
-    t.string "description"
     t.datetime "created_at", null: false
+    t.string "description"
+    t.string "title"
     t.datetime "updated_at", null: false
   end
 
   create_table "reviews", force: :cascade do |t|
-    t.string "title"
-    t.string "content"
-    t.integer "rating"
-    t.integer "user_id", null: false
     t.integer "book_id", null: false
+    t.string "content"
     t.datetime "created_at", null: false
+    t.integer "rating"
+    t.string "title"
     t.datetime "updated_at", null: false
+    t.integer "user_id", null: false
     t.index ["book_id"], name: "index_reviews_on_book_id"
     t.index ["user_id"], name: "index_reviews_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
+    t.datetime "created_at", null: false
     t.string "email"
     t.string "name"
     t.string "password_digest"
-    t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 

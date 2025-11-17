@@ -1,10 +1,10 @@
 # Rails Hackathon Starter Kit
 
 ## Overview
-A Rails 7.1 application providing both a web interface and JSON API for user management. Originally created as a hackathon starter template.
+A Rails 8.1.1 application providing both a web interface and JSON API for user management. Originally created as a hackathon starter template.
 
 ## Tech Stack
-- **Framework**: Rails 7.1.3
+- **Framework**: Rails 8.1.1
 - **Ruby**: 3.2.4
 - **Database**: SQLite3 (in development)
 - **Frontend**: Tailwind CSS, Hotwire (Turbo + Stimulus)
